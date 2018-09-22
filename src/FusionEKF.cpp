@@ -116,7 +116,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
     	// initialize Px from the laser measurement Px
     	ekf_.x_(0) = measurement_pack.raw_measurements_(0);
-
+		// initialize Py from the laser measurement Py
     	ekf_.x_(1) = measurement_pack.raw_measurements_(1);
 
     }
